@@ -13,8 +13,7 @@ if (!isset($_SESSION['user']) && !isset($_SESSION['pass'])) {
     echo $nombre;
     echo $pass;
 } else {
-    $error = "No te has registrado";
-    header("Location:login.php?error=$error");
+    header("Location:login.php");
 }
 
 $smarty = new Smarty();
