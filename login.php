@@ -30,7 +30,7 @@ if (isset($_POST['enviar'])) {
 } else {
 
     if (isset($_GET['error'])) {
-        $error = $_GET['error'];
+        $error = "No ha iniciado sesión";
     } else {
         $error = "";
     }
